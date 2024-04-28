@@ -100,3 +100,99 @@ a {
         left: 0;
     }
 }
+
+/* First section */
+
+.dev-head {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dev\ head.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dev {
+    padding: 4rem;
+}
+
+.dev h2 {
+    padding-top: 7rem;
+    font-size: 3.6rem;
+    color: #fff;
+}
+
+.dev p {
+    padding-top: 2rem;
+    color: #fff;
+}
+
+button {
+    margin: 2rem 0rem;
+    width: 150px;
+    height: 50px;
+    background: #fff;
+    color: #000;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+button:hover {
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:826px) {
+    .dev {
+        padding: 2rem;
+    }
+
+    .dev h2 {
+        padding-top: 3rem;
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    .dev p {
+        padding-top: 2rem;
+        color: #fff;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:606px) {
+    .dev {
+        padding: 2rem;
+    }
+
+    .dev h2 {
+        padding-top: 3rem;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .dev p {
+        padding-top: 2rem;
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:435px) {
+    .dev {
+        padding: 2rem;
+    }
+
+    .dev h2 {
+        padding-top: 3rem;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .dev p {
+        padding-top: 1rem;
+        color: #fff;
+        font-size: 13px;
+    }
+}
