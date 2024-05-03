@@ -196,3 +196,55 @@ button:hover {
         font-size: 13px;
     }
 }
+
+
+.second-section {
+    background: #222831;
+    color: #fff;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.second-sect {
+    padding: 2rem;
+}
+
+.second-sect h2 {
+    padding-bottom: 1rem;
+}
+
+.second-sect p {
+    color: #F6F5F2;
+}
+
+@media screen and (max-width:1225px) {
+    .second-section {
+        background: #222831;
+        color: #fff;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:946px) {
+    .second-section {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:717px) {
+    .second-section {
+        background: #222831;
+        color: #fff;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* text-align: center; */
+    }
+
+    .second-sect {
+        padding: 1rem;
+    }
+}
