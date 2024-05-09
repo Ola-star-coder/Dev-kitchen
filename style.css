@@ -248,3 +248,128 @@ button:hover {
         padding: 1rem;
     }
 }
+
+/* Third section */
+.third-section {
+    background: #C3FF93;
+    padding: 4rem;
+    /* grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* The text section */
+.second-section-text {
+    padding-top: 4rem;
+}
+
+.second-section-text h2 {
+    font-size: 4.5rem;
+    /* font-family: "Acme", sans-serif; */
+}
+
+/* Img */
+.section-section-img {
+    padding: 4rem 4rem;
+}
+
+.section-section-img img {
+    width: 70%;
+    border-radius: 100%;
+}
+
+/* Media for third section */
+@media screen and (max-width:1376px) {
+    .second-section-text h2 {
+        font-size: 3rem;
+        /* font-family: "Acme", sans-serif; */
+    }
+}
+
+@media screen and (max-width:1107px) {
+    .section-section-img img {
+        width: 100%;
+        border-radius: 100%;
+    }
+
+    .section-section-img {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:961px) {
+    .second-section-text h2 {
+        font-size: 2rem;
+        /* font-family: "Acme", sans-serif; */
+    }
+
+    .third-section {
+        padding: 1rem;
+    }
+
+    .section-section-img img {
+        width: 90%;
+        border-radius: 100%;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .third-section {
+        padding: 4rem;
+        /* grid */
+        display: grid;
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .second-section-text h2 {
+        font-size: 3rem;
+        /* font-family: "Acme", sans-serif; */
+    }
+}
+
+@media screen and (max-width:578px) {
+    .third-section {
+        padding: 1rem;
+    }
+
+    .second-section-text h2 {
+        font-size: 2.6rem;
+        font-family: "Acme", sans-serif;
+        padding-bottom: 1rem;
+    }
+
+    .second-section-text p {
+        padding-bottom: 1rem;
+    }
+}
+
+.forth {
+    background: #000;
+    color: #fff;
+    padding: 2rem;
+}
+
+.forth-head {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.forth-head h2 {
+    font-size: 50px;
+    padding-bottom: 1rem;
+    font-style: italic;
+}
+
+.forth-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.forth-image img {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    border-radius: 20px;
+}
