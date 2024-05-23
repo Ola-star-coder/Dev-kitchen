@@ -364,12 +364,61 @@ button:hover {
 
 .forth-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 30px;
 }
 
 .forth-image img {
     width: 100%;
     padding: 10px;
-    height: 100%;
     border-radius: 20px;
+    transition: .5s;
+    filter: brightness(50%);
+}
+
+.forth-image {
+    position: relative;
+}
+
+.forth-image img:hover {
+    filter: brightness(40%);
+}
+
+.forth-image p {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 10px;
+    font-size: 25px;
+    opacity: 0;
+}
+
+p:hover {
+    transition: .5s;
+    cursor: pointer;
+    opacity: 100;
+}
+
+@media screen and (max-width:1275px) {
+    .forth-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:779px) {
+    .forth-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width:461px) {
+    .forth-image p {
+        font-size: 17px;
+    }
 }
