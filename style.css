@@ -422,3 +422,57 @@ p:hover {
         font-size: 17px;
     }
 }
+
+.fifth {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+.fifth-head {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.fifth-head h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-style: oblique;
+}
+
+.fifth-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fifth-image img {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+}
+
+
+@media screen and (max-width:879px) {
+    .fifth-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .fifth-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fifth-head h2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 30px;
+        font-style: oblique;
+    }
+
+    .fifth-head {
+        text-align: center;
+        padding: 1rem 0rem;
+    }
+}
