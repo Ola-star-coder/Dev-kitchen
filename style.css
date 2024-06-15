@@ -476,3 +476,216 @@ p:hover {
         padding: 1rem 0rem;
     }
 }
+
+.sixth {
+    background: rgb(245, 238, 229);
+    padding: 2rem;
+}
+
+.sixth-head {
+    text-align: center;
+}
+
+.sixth-head h2 {
+    font-size: 60px;
+    color: #43840e;
+    padding-top: 1rem;
+}
+
+.sixth-head p {
+    padding-top: 10px;
+}
+
+.sixth-grid {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.sixth-div {
+    background: #C3FF93;
+    padding: 30px;
+    width: 100%;
+    border-radius: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.sixth-div:nth-child(2) {
+    background: #fa93ff;
+}
+
+.sixth-div:last-child {
+    background: #fa9c9c;
+}
+
+.sixth-div h2 {
+    padding: 10px;
+}
+
+.sixth-div p {
+    padding: 10px;
+    font-size: 17px;
+}
+
+.sixth-div h3 {
+    padding: 10px;
+    font-size: 24px;
+}
+
+.sixth-div:hover {
+    background: #000;
+    color: #fff;
+    transition: 1s;
+}
+
+@media screen and (max-width:1279px) {
+    .sixth-grid {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .sixth-div {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:723px) {
+    .sixth-grid {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .sixth-head h2 {
+        font-size: 30px;
+        color: #43840e;
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width:435px) {
+    .sixth-grid {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .sixth-div h2 {
+        font-size: 17px;
+        padding: 10px;
+    }
+
+    .sixth-div p {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .sixth-div h3 {
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    .sixth-div {
+        background: #C3FF93;
+        padding: 10px;
+    }
+}
+
+.recipe {
+    background: rgb(40, 39, 39);
+    color: #fff;
+    padding: 1rem;
+}
+
+.recipe-head {
+    text-align: center;
+    padding: 1rem;
+}
+
+.recipe-head h2 {
+    font-size: 40px;
+    color: #43840e;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.recipe-img {
+    position: relative;
+}
+
+.recipe-img .absolute {
+    position: absolute;
+    padding-left: 10px;
+    top: 70%;
+    font-size: 20px;
+}
+
+.absolute h3 {
+    padding-top: 10px;
+}
+
+.recipe-img img {
+    width: 100%;
+    border-radius: 20px;
+    opacity: 30%;
+}
+
+@media screen and (max-width:1241px) {
+    .recipe-img .absolute {
+        top: 60%;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:1019px) {
+    .recipe-img .absolute {
+        top: 70%;
+        font-size: 17px;
+    }
+
+    .recipes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:727px) {
+    .recipe-img .absolute {
+        top: 60%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:627px) {
+    .recipes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .recipe-img .absolute {
+        top: 70%;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .recipe-img .absolute {
+        top: 60%;
+        font-size: 15px;
+    }
+}
